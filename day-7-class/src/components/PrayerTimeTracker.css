@@ -1,0 +1,72 @@
+.prayer-tracker {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.prayer-tracker h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.current-time {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.current-time h2 {
+  font-size: 3em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.current-time p {
+  margin: 10px 0 0 0;
+  font-size: 1.1em;
+}
+
+.greeting {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.next-prayer {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.prayer-times {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.prayer-times h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.prayer-time {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1.1em;
+}
+
+.prayer-time:last-child {
+  border-bottom: none;
+}

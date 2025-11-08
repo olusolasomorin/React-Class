@@ -1,0 +1,135 @@
+.news-app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.news-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #008751;
+}
+
+.news-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.category-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category-filter button {
+  padding: 10px 20px;
+  border: 2px solid #008751;
+  background: white;
+  color: #008751;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category-filter button.active {
+  background: #008751;
+  color: white;
+}
+
+.category-filter button:hover {
+  transform: translateY(-2px);
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #008751;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error {
+  text-align: center;
+  padding: 60px;
+  color: #d32f2f;
+}
+
+.error button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.article-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.category-badge {
+  display: inline-block;
+  background: #008751;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.article-card h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.article-body {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 0.9em;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.no-results {
+  text-align: center;
+  color: #999;
+  padding: 40px;
+}
